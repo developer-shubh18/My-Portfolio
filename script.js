@@ -73,3 +73,26 @@ document.querySelectorAll('.passion-item').forEach((item, index) => {
 window.addEventListener('load', () => {
   setTimeout(typeWriter, 500);
 });
+
+// Modal functions for certificate popup
+function openModal(imageSrc, imageAlt) {
+  const modal = document.getElementById('certificateModal');
+  const modalImg = document.getElementById('modalImage');
+  modal.style.display = 'block';
+  modalImg.src = imageSrc;
+  modalImg.alt = imageAlt;
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  const modal = document.getElementById('certificateModal');
+  modal.style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    closeModal();
+  }
+});

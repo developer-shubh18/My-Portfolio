@@ -112,6 +112,38 @@
     </div>
   </section>
 
+    <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skills-category">
+        <h3>Technical Skills</h3>
+        <div class="skills-list">
+          <span class="skill-tag">HTML, CSS, JavaScript</span>
+          <span class="skill-tag">MEAN(Stack)</span>
+          <span class="skill-tag">iOS Development (Swift, SwiftUI, UIKit)</span>
+          <span class="skill-tag">Artificial Intelligence & Machine Learning</span>
+          <span class="skill-tag">Python Programming</span>
+          <span class="skill-tag">Git & GitHub</span>
+          <span class="skill-tag">Object-Oriented Programming (OOP)</span>
+          <span class="skill-tag">Data Structures & Algorithms</span>
+        </div>
+      </div>
+      
+      <div class="skills-category">
+        <h3>Professional Skills</h3>
+        <div class="skills-list">
+          <span class="skill-tag">Mentoring & Peer Learning</span>
+          <span class="skill-tag">Leading </span>
+          <span class="skill-tag">Team Collaboration</span>
+          <span class="skill-tag">Hackathon Participation</span>
+          <span class="skill-tag">Problem Solving</span>
+          <span class="skill-tag">Time Management</span>
+          <span class="skill-tag">Technical Communication</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="projects">
     <h2>Projects</h2>
     <div class="projects-grid">
@@ -162,33 +194,46 @@
     </div>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <div class="skills-category">
-        <h3>Technical Skills</h3>
-        <div class="skills-list">
-          <span class="skill-tag">HTML, CSS, JavaScript</span>
-          <span class="skill-tag">MEAN(Stack)</span>
-          <span class="skill-tag">iOS Development (Swift, SwiftUI, UIKit)</span>
-          <span class="skill-tag">Artificial Intelligence & Machine Learning</span>
-          <span class="skill-tag">Python Programming</span>
-          <span class="skill-tag">Git & GitHub</span>
-          <span class="skill-tag">Object-Oriented Programming (OOP)</span>
-          <span class="skill-tag">Data Structures & Algorithms</span>
+  <section id="achievements">
+    <h2>Achievements & Certificates</h2>
+    <div class="certificates-grid">
+      <div class="certificate-card">
+        <h3>AWS</h3>
+        <p>Completed the AWS Academy Cloud Foundations course through AWS Academy, gaining hands-on knowledge of core cloud concepts and services on Amazon Web Services.</p>
+        <div class="certificate-image">
+          <img src="Assets/Certificates/AWS certificate.jpeg" alt="AWS Certificate" loading="lazy" onclick="openModal(this.src, this.alt)" style="cursor: pointer;">
         </div>
       </div>
       
-      <div class="skills-category">
-        <h3>Professional Skills</h3>
-        <div class="skills-list">
-          <span class="skill-tag">Mentoring & Peer Learning</span>
-          <span class="skill-tag">Leading </span>
-          <span class="skill-tag">Team Collaboration</span>
-          <span class="skill-tag">Hackathon Participation</span>
-          <span class="skill-tag">Problem Solving</span>
-          <span class="skill-tag">Time Management</span>
-          <span class="skill-tag">Technical Communication</span>
+      <div class="certificate-card">
+        <h3>Computer Networks</h3>
+        <p>Completed the Computer Networks and Internet Protocol course via NPTEL, coordinated by Indian Institute of Technology Kharagpur and delivered through SWAYAM, demonstrating proficiency in core networking concepts.</p>
+        <div class="certificate-image">
+          <img src="Assets/Certificates/CN certificate.jpeg" alt="Computer Networks Certificate" loading="lazy" onclick="openModal(this.src, this.alt)" style="cursor: pointer;">
+        </div>
+      </div>
+      
+      <div class="certificate-card">
+        <h3>Vadodara Hackathon 6.0</h3>
+        <p>Participated in Vadodara Hackathon 6.0 at Parul University through the Parul Innovation & Entrepreneurship Research Centre, showcasing teamwork, problem-solving, and real-world innovation skills.</p>
+        <div class="certificate-image">
+          <img src="Assets/Certificates/vadodara hackathon 6.0.jpeg" alt="Vadodara Hackathon 6.0 Certificate" loading="lazy" onclick="openModal(this.src, this.alt)" style="cursor: pointer;">
+        </div>
+      </div>
+      
+      <div class="certificate-card">
+        <h3>Cyber Security</h3>
+        <p>Completed a Cybersecurity skilling course under Skill India, delivered by Tech Mahindra Foundation through Skill India Digital Hub, gaining practical exposure to core information-security concepts.</p>
+        <div class="certificate-image">
+          <img src="Assets/Certificates/cybersecurity.png" alt="Cyber Security Certificate" loading="lazy" onclick="openModal(this.src, this.alt)" style="cursor: pointer;">
+        </div>
+      </div>
+      
+      <div class="certificate-card">
+        <h3>PU Code Hackathon</h3>
+        <p>Served as a Student Coordinator for the PU Code Hackathon 3.0 at Parul University, contributing to event operations, cross-team coordination, and overall execution success.</p>
+        <div class="certificate-image">
+          <img src="Assets/Certificates/Pu code hackathon 3.0.jpeg" alt="PU Code Hackathon Certificate" loading="lazy" onclick="openModal(this.src, this.alt)" style="cursor: pointer;">
         </div>
       </div>
     </div>
@@ -206,6 +251,14 @@
       </a>
     </div>
   </section>
+
+  <!-- Modal for certificate popup -->
+  <div id="certificateModal" class="modal" onclick="closeModal()">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="modalImage" src="" alt="">
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
